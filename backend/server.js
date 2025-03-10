@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const mongoose_URI = "mongodb+srv://<db_username>:<db_password>@deployment-demo.gkrup.mongodb.net/?retryWrites=true&w=majority&appName=deployment-demo"
+const mongoose_URI = "mongodb+srv://<mongouser>:<mongopass>@deployment-demo.gkrup.mongodb.net/?retryWrites=true&w=majority&appName=deployment-demo"
 const app = express();
 const PORT = 5000;
 
