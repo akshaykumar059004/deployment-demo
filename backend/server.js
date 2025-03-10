@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-
+const mongoose_URI = "mongodb+srv://<db_username>:<db_password>@deployment-demo.gkrup.mongodb.net/?retryWrites=true&w=majority&appName=deployment-demo"
 const app = express();
 const PORT = 5000;
 
@@ -15,7 +15,7 @@ app.listen(5000, '0.0.0.0', () => {
 
 
 // 🔹 Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/mydatabase", {
+mongoose.connect(mongoose_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log("✅ Connected to MongoDB"))
