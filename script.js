@@ -1,4 +1,4 @@
-const API_URL = "http://192.168.1.18:5000"; // Backend URL
+const API_URL = "https://hfnznc4x-5000.inc1.devtunnels.ms"; // Backend URL
 
 document.getElementById("dataForm").addEventListener("submit", async function (event) {
     event.preventDefault();
