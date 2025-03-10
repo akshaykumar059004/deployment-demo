@@ -4,14 +4,14 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const mongoose_URI = "mongodb+srv://<mongouser>:<mongopass>@deployment-demo.gkrup.mongodb.net/?retryWrites=true&w=majority&appName=deployment-demo"
 const app = express();
-const PORT = 5000;
+//const PORT = 5000;
 
 app.use(cors({ origin: "*" }));
 app.use(bodyParser.json());
 
-app.listen(5000, '0.0.0.0', () => {
-    console.log("Server running on port 5000");
-});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, '0.0.0.0', () => console.log(`Server running on port ${PORT}`));
+
 
 
 // 🔹 Connect to MongoDB
