@@ -1,4 +1,4 @@
-const API_URL = "http://34.93.153.128/5600"; // Backend URL
+const API_URL = "http://34.93.153.128:5600"; // Backend URL
 
 document.getElementById("dataForm").addEventListener("submit", async function (event) {
     event.preventDefault();
