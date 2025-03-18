@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const mongoose_URI = "mongodb+srv://<mongouser>:<mongopass>@deployment-demo.gkrup.mongodb.net/?retryWrites=true&w=majority&appName=deployment-demo"
+const mongoose_URI = "mongodb+srv://mongouser:reactuser@react-native-dev-cluste.gkrup.mongodb.net/react-native-dev-bd?retryWrites=true&w=majority&appName=react-native-dev-cluster" 
 const app = express();
 
 
