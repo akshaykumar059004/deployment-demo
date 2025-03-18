@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5600"; // Backend URL
+const API_URL = "https://deployment-demo-ujgo.onrender.com"; // Backend URL
 
 document.getElementById("dataForm").addEventListener("submit", async function (event) {
     event.preventDefault();
